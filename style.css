@@ -24,9 +24,10 @@ body {
       width: 485px;
        height: 230px;
        font-size: 64px; 
-       padding-bottom: 15px;
+     padding-bottom: 15px; 
   }
   .heading img{
+    
     width: 550px;
     height: 430px;
 }
@@ -58,7 +59,6 @@ body {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     margin-top: 25px; 
     padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 33px;
     padding-top: 15px;
     
@@ -129,4 +129,23 @@ body {
 }
 .copyright{
     font-Size:12px;
+}
+/* media quary */
+@media only screen and (max-width:688px) {
+    .heading h1, .heading img, .match img, .footer img{
+        width: 100%;
+    }
+    .players, .heading, .match{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    } 
+    .text, .footer{
+        flex-direction: column; 
+    }
+    .match img,.text, .match-show{
+        padding-left: 0;
+    }
+     .button, .match img{
+        margin-top: 50px;
+    }
 }
